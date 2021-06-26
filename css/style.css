@@ -8,6 +8,14 @@
     --big-shoulders: "Big Shoulders Display";
 }
 
+*{
+    box-sizing: border-box;
+}
+
+.none{
+    display: none;
+}
+
 body {
     display: grid;
     min-height: 100vh;
@@ -15,6 +23,7 @@ body {
     font-size: 15px;
     color: var(--very-light-gray);
     font-family: var(--lexend-deca), sans-serif;
+    padding: 7em 0;
 }
 
 .title {
@@ -61,6 +70,7 @@ body {
     font-family: inherit;
     border-radius: 1.5em;
     border-color: transparent;
+    cursor: pointer
 }
 
 .btn-1 {
