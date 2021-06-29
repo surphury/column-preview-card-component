@@ -1,4 +1,9 @@
-:root {
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;:root {
     --bright-orange: hsl(31, 77%, 52%);
     --dark-cyan: hsl(184, 100%, 22%);
     --very-dark-cyan: hsl(179, 100%, 13%);
@@ -9,7 +14,8 @@
 }
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .none{
@@ -17,6 +23,7 @@
 }
 
 body {
+    display: -ms-grid;
     display: grid;
     min-height: 100vh;
     margin: 0;
@@ -55,8 +62,10 @@ body {
     height: 470px;
     max-width: 328px;
     padding: 3em;
+    display: -ms-grid;
     display: grid;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .paragraph {
@@ -66,6 +75,8 @@ body {
 
 .button {
     padding: 1em 2em;
+    -ms-grid-row-align: baseline;
+    -ms-grid-column-align: baseline;
     place-self: baseline;
     font-family: inherit;
     border-radius: 1.5em;
@@ -90,9 +101,13 @@ body {
         border: 2px solid;
         color: var(--very-light-gray);
         background-color: transparent;
+        -webkit-transition: background-color .3s linear;
+        -o-transition: background-color .3s linear;
         transition: background-color .3s linear;
     }
     .brands-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -110,3 +125,11 @@ body {
     color: hsl(228, 45%, 44%);
     text-decoration-line: none;
 } */
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
